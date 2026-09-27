@@ -2,6 +2,10 @@
 
 A personal portfolio for backend engineering, full-stack development, and AI / GenAI. Built with React 18, TypeScript, Vite 6, Tailwind CSS 4, and Framer Motion.
 
+Live: https://prasad-portfolio-roan.vercel.app/
+
+Source: https://github.com/moto23/prasad-portfolio
+
 ## Development
 
 Use Node.js 22 and npm:
@@ -43,6 +47,6 @@ The contact form opens a draft in the visitor's own email application. It does n
 
 ## Deployment
 
-Vercel builds with `npm run build` and serves `dist/`. Reuse the linked project when present. Production canonical/social URLs and the sitemap should use the actual assigned domain, never the previous Gamma site.
+Vercel builds with `npm run build` and serves `dist/`. Reuse the linked project when present. Production canonical/social URLs and the sitemap use the assigned Vercel domain. If the domain changes, run `node scripts/set-site-url.mjs https://YOUR-VERIFIED-DOMAIN/`, commit the generated metadata, and redeploy.
 
 Local auth, CLI tools, caches, test artifacts, dependencies, and build output are excluded from Git. Do not commit credentials or `.env` files.
